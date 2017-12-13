@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Главная: Техномарт</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -13,8 +15,8 @@
             Поиск<input type="text" name="search-field">
           </label>
         </p>
-        <p class="header-store-favorites">Закладки: 0</p>
-        <p class="header-store-cart">Корзина: 0</p>
+        <p class="header-store-favorites">Закладки: <span>0</span></p>
+        <p class="header-store-cart">Корзина: <span>0</span></p>
         <p class="header-store-buy">
           <a href="#">Оформить заказ</a>
         </p>
@@ -27,8 +29,8 @@
           <p class="contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="info-user">
-          <button type="button">Войти</button>
-          <a href="#">Регистрация</a>
+          <button type="button" class="info-user-signin">Войти</button>
+          <a href="#" class="info-user-signup">Регистрация</a>
         </div>
       </section>
       <nav class="main-nav">
@@ -90,7 +92,7 @@
                 <a class="button-catalog" href="catalog.html">Открыть каталог</a>
               </li>
               <li class="slides-item">
-                <p class="slides-item-title">Дрелы</p>
+                <p class="slides-item-title">Дрели</p>
                 <span class="slides-item-text">Соседям на радость!</span>
                 <a class="button-catalog" href="catalog.html">Открыть каталог</a>
               </li>
@@ -105,25 +107,25 @@
         </div>
         <ul class="main-goods-list">
           <li class="main-goods-item">
-            <img src="/img/" alt="#">
+            <img src="img/bfg9000.jpg" alt="BOSCH BFG 9000">
             <p class="goods-item-title">Перфоратор BOSCH BFG 9000</p>
             <p class="goods-item-sale">32500 Р.</p>
             <button class="button button-buy" type="button">25500 Р.</button>
           </li>
           <li class="main-goods-item">
-            <img src="/img/" alt="#">
+            <img src="img/bfg3000.jpg" alt="BOSCH BFG 3000">
             <p class="goods-item-title">Перфоратор BOSCH BFG 3000</p>
             <p class="goods-item-sale">22500 Р.</p>
             <button class="button button-buy" type="button">15500 Р.</button>
           </li>
           <li class="main-goods-item">
-            <img src="/img/" alt="#">
+            <img src="img/bfg6000.jpg" alt="BOSCH BFG 6000">
             <p class="goods-item-title">Перфоратор BOSCH BFG 6000</p>
             <p class="goods-item-sale">30500 Р.</p>
             <button class="button button-buy" type="button">25500 Р.</button>
           </li>
           <li class="main-goods-item">
-            <img src="/img/" alt="#">
+            <img src="img/bfg2000.jpg" alt="BOSCH BFG 2000">
             <p class="goods-item-title">Перфоратор BOSCH BFG 2000</p>
             <button class="button button-buy" type="button">12500 Р.</button>
           </li>
@@ -136,28 +138,28 @@
         </div>
         <ul class="main-brands-list">
           <li class="main-brands-item">
-            <img src="/img/" alt="Bosch">
+            <img src="img/bosch.png" alt="Bosch">
           </li>
           <li class="main-brands-item">
-            <img src="/img/" alt="Makita">
+            <img src="img/makita.png" alt="Makita">
           </li>
           <li class="main-brands-item">
-            <img src="/img/" alt="DeWalt">
+            <img src="img/dewalt.png" alt="DeWalt">
           </li>
           <li class="main-brands-item">
-            <img src="/img/" alt="Интерскол">
+            <img src="img/interskol.png" alt="Интерскол">
           </li>
           <li class="main-brands-item">
-            <img src="/img/" alt="Hitachi">
+            <img src="img/hitachi.png" alt="Hitachi">
           </li>
           <li class="main-brands-item">
-            <img src="/img/" alt="LG">
+            <img src="img/lg.png" alt="LG">
           </li>
           <li class="main-brands-item">
-            <img src="/img/" alt="AEG">
+            <img src="img/aeg.png" alt="AEG">
           </li>
           <li class="main-brands-item">
-            <img src="/img/" alt="Metabo">
+            <img src="img/metabo.png" alt="Metabo">
           </li>
         </ul>
       </section>
@@ -201,7 +203,7 @@
         <div class="about-wrapper-contacts">
           <h3 class="main-about-title">Контакты</h3>
           <p class="main-about-text">Вы можете забрать товар сами, заехав в наш офис:</p>
-          <img src="/img/" alt="Карта">
+          <img src="img/mini-map.png" alt="Карта">
           <a class="button button-about">Заблудились? Напишите нам!</a>
         </div>
       </section>
