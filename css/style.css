@@ -23,6 +23,30 @@ img {
   height: auto;
 }
 
+.container {
+  width: 960px;
+
+  margin: 0 auto;
+  padding: 0;
+}
+
+.button {
+  min-width: 195px;
+
+  padding: 14px 47px;
+
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+  border: none;
+  border-radius: 2px;
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
@@ -40,7 +64,13 @@ img {
 }
 
 .header-store {
-  margin: 0;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
   padding: 0;
 
   background-color: #293449;
@@ -53,6 +83,7 @@ img {
   font-size: 24px;
   line-height: 24px;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .header-store-search,
@@ -67,7 +98,18 @@ img {
   color: #fff;
 }
 
+.header-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #f3f7f9;
+}
+
 .header-info-title {
+  max-width: 200px;
+
   margin: 0;
   padding: 0;
 
@@ -75,6 +117,10 @@ img {
   line-height: 23px;
   font-style: italic;
   color: #ee3643;
+}
+
+.header-info-contacts {
+  flex-basis: 270px;
 }
 
 .contacts-phone {
@@ -91,25 +137,43 @@ font-size: 14px;
 line-height: 24px;
 }
 
+.info-user {
+  flex-basis: 281px;
+}
+
 .info-user-signin,
 .info-user-signup {
+  min-width: 121px;
+  min-height: 45px;
+
+  font-size: 21px;
+  line-height: 18px;
   color: #000000;
 
-font-size: 21px;
-
-line-height: 18px;
+  background-color: #ffffff;
+  border: none;
 }
 
 .main-nav {
+
   background-color: #32425c;
 
 }
 
 .nav-list {
+  display: flex;
+  flex-basis: 940px;
+  justify-content: space-between;
+  align-items: center;
+
   margin: 0;
   padding: 0;
 
   list-style-type: none;
+}
+
+.nav-list-item {
+  min-width: 121px;
 }
 
 .nav-list-link {
@@ -159,7 +223,6 @@ line-height: 18px;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
-  font-family: Cuprum;
 
   text-transform: uppercase;
 }
@@ -171,6 +234,284 @@ line-height: 18px;
   list-style-type: none;
 }
 
+.slides-item {
+  background-color: #ada9a6;
+}
+
 .slides-item:nth-child(2) {
   display: none;
+}
+
+.slides-item-title {
+  font-size: 36px;
+font-weight: 700;
+line-height: 30px;
+color: #ffffff;
+text-transform: uppercase;
+}
+
+.slides-item-text {
+  font-family: "PT Sans";
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+color: #ffffff;
+}
+
+.button-catalog {
+
+}
+
+.main-goods-wrapper {
+  background-color: #f7f3ec;
+}
+
+.main-goods-title {
+  color: #32425c;
+font-family: Cuprum;
+font-size: 30px;
+font-weight: 400;
+line-height: 30px;
+text-transform: uppercase;
+}
+
+.button-popular {
+
+}
+
+.main-goods-list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.main-goods-item {
+  width: 220px;
+  height: 318px;
+
+  border: 1px solid #e5e5e5;
+}
+
+.goods-item-title {
+  color: #000000;
+font-family: "PT Sans";
+font-size: 18px;
+font-weight: 700;
+line-height: 20px;
+}
+
+.goods-item-sale {
+  color: #999999;
+font-family: "PT Sans";
+font-size: 17px;
+font-weight: 700;
+line-height: 18px;
+text-decoration: line-through;
+text-transform: uppercase;
+}
+
+.button-buy {
+  color: #ffffff;
+font-family: "PT Sans";
+font-size: 17px;
+font-weight: 700;
+line-height: 18px;
+text-transform: uppercase;
+}
+
+.main-brands-wrapper {
+  background-color: #f7f3ec;
+}
+
+.main-brands-title {
+  color: #32425c;
+font-family: Cuprum;
+font-size: 30px;
+font-weight: 400;
+line-height: 30px;
+text-transform: uppercase;
+}
+
+.main-brands-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-brands-item {
+  width: 220px;
+  height: 145px;
+
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.main-services {
+  background-color: #f4f8f9;
+}
+
+.main-services-title {
+  font-family: Cuprum;
+font-size: 30px;
+font-weight: 400;
+text-transform: uppercase;
+}
+
+.main-services-text {
+  color: #000000;
+font-family: "PT Sans";
+font-size: 13px;
+font-weight: 400;
+line-height: 24px;
+}
+
+.main-services-list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.main-services-item {
+  color: #32425c;
+font-family: Cuprum;
+font-size: 21px;
+font-weight: 700;
+line-height: 30px;
+}
+
+.main-services-slides {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.services-slides-title {
+  color: #32425c;
+font-family: Cuprum;
+font-size: 36px;
+font-weight: 400;
+text-transform: uppercase;
+}
+
+.services-slides-text {
+  color: #000000;
+font-family: "PT Sans";
+font-size: 13px;
+font-weight: 400;
+line-height: 24px;
+}
+
+.button-credit {
+
+}
+
+.main-about-title {
+  font-family: Cuprum;
+font-size: 30px;
+font-weight: 400;
+line-height: 24px;
+text-transform: uppercase;
+}
+
+.main-about-text {
+  color: #000000;
+font-family: "PT Sans";
+font-size: 13px;
+font-weight: 400;
+}
+
+.main-about-list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.main-about-item {
+  font-family: Cuprum;
+font-size: 18px;
+font-weight: 400;
+line-height: 20px;
+}
+
+.button-about {
+
+}
+
+.main-footer {
+  background-color: #32425c;
+}
+
+.footer-nav {
+  margin-bottom: 50px;
+}
+
+.footer-nav-logo {
+
+color: #ffffff;
+font-family: Cuprum;
+font-size: 30px;
+font-weight: 400;
+line-height: 30px;
+text-transform: uppercase;
+}
+
+.footer-nav-address,
+.footer-nav-phone {
+  color: #f1f5f7;
+font-family: Cuprum;
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+}
+
+.footer-nav-list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.footer-nav-item a {
+  color: #f1f5f7;
+font-family: Cuprum;
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+
+text-decoration: none;
+}
+
+.footer-copyright-text {
+  color: #ffffff;
+font-family: Cuprum;
+font-size: 16px;
+font-weight: 400;
+line-height: 18px;
+}
+
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.footer-mail-title,
+.footer-mail-address,
+.footer-developer-title,
+.footer-developer-site {
+  color: #ffffff;
+font-family: Cuprum;
+font-size: 16px;
+font-weight: 400;
+line-height: 18px;
+}
+
+.footer-mail-address,
+.footer-developer-site {
+  color: #ffd180;
 }
