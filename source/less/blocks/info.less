@@ -31,28 +31,47 @@
   flex-basis: 270px;
 }
 
-.info-phone {
+.info__phone {
+  width: 270px;
+  height: 45px;
+
+  border: 3px solid #ffffff;
+}
+
+.info__phone-number {
+  display: block;
+  min-width: 151px;
+  margin: 0 auto;
+  padding: 0;
+
   font-size: 21px;
   line-height: 18px;
-
+  letter-spacing: 0.42px;
   color: #e9292a;
+  text-align: center;
+  vertical-align: middle;
 }
 
-.info-address {
+.info__address {
+  font-size: 14px;
+  line-height: 24px;
   color: #32425c;
-
-font-size: 14px;
-line-height: 24px;
 }
 
-.info-user {
+.info__user {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   flex-basis: 281px;
+  min-height: 45px;
 }
 
-.info-user-signin,
-.info-user-signup {
-  min-width: 121px;
+.info__signin,
+.info__signup {
+  width: 121px;
   min-height: 45px;
+  margin: 0;
+  padding: 0;
 
   font-size: 21px;
   line-height: 18px;
@@ -60,4 +79,14 @@ line-height: 24px;
 
   background-color: #ffffff;
   border: none;
+  cursor: pointer;
+}
+
+.info__signup {
+  box-sizing: border-box;
+  width: 150px;
+  margin-left: 20px;
+  padding-top: 14px;
+
+  text-align: center;
 }

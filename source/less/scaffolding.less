@@ -78,10 +78,10 @@ img {
 }
 
 .container {
-  width: 960px;
+  width: 940px;
 
   margin: 0 auto;
-  padding: 0;
+  padding: 0 10px;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -102,4 +102,24 @@ img {
 
 input[type="radio"] {
   display: none;
+}
+
+::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #ffffff;
+  opacity: 1;
+} /* Firefox 19+ */
+
+:-moz-placeholder {
+  color: #ffffff;
+  opacity: 1;
+} /* Firefox 18- */
+
+:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
 }
