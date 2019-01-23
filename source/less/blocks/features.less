@@ -16,34 +16,63 @@
 .features__item {
   width: 300px;
   height: 123px;
-}
 
-.features__item:first-child {
-  background-color: #f6b22d;
-}
+  &--materials {
+    background-color: #f6b22d;
+    background-image: url("../img/icon-materials.svg");
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
 
-.features__item:nth-child(2) {
-  background-color: #4aafde;
-}
+  &--tools {
+    background-color: #4aafde;
+    background-image: url("../img/icon-tools.svg");
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
 
-.features__item:nth-child(3) {
-  background-color: #cc79d1;
+  &--equipment {
+    background-color: #cc79d1;
+    background-image: url("../img/icon-equipment.svg");
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
+
+  &--discounts {
+    background-color: #85d179;
+    background-image: url("../img/icon-discounts.svg");
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
+
+  &--delivery {
+    margin-top: 20px;
+    background-color: #f6b22d;
+    background-image: url("../img/icon-delivery.svg");
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
+
+  &--ribbon {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 59px;
+
+      background-image: url("../img/new-flag.png");
+    }
+  }
 }
 
 .features__item-wrapper {
   margin: 0;
   margin-top: auto;
   padding: 0;
-}
-
-.features__item-wrapper li:nth-child(1) {
-
-  background-color: #85d179;
-}
-
-.features__item-wrapper li:nth-child(2) {
-  margin-top: 20px;
-  background-color: #f6b22d;
 }
 
 .features__title {
@@ -57,9 +86,15 @@
 }
 
 .features__text {
+  width: 135px;
+  height: 38px;
+
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
-
   text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: rgba(0, 0, 0, 0.1);
 }
