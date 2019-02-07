@@ -94,10 +94,16 @@
               <p class="features__text">Для стройки</p>
             </li>
             <li class="features__item features__item--slides slides">
-              <input type="radio" id="slide-1" name="feature" checked>
+              <input type="radio" id="previous" name="feature" checked>
+              <input type="radio" id="next" name="feature">
+              <input type="radio" id="slide-1" name="feature">
               <input type="radio" id="slide-2" name="feature">
-              <label class="slides__label slides__label--left" for="slide-1">Предыдущий слайд</label>
-              <label class="slides__label slides__label--right" for="slide-2">Следующий слайд</label>
+              <label class="slides__label slides__label--left" for="previous">Предыдущий слайд</label>
+			        <label class="slides__label slides__label--right" for="next">Следующий слайд</label>
+			        <div class="slides__wrapper toggles">
+				        <label class="slides__label toggle" for="slide-1">Первый слайд</label>
+				        <label class="slides__label toggle" for="slide-2">Второй слайд</label>
+			        </div>
               <ul class="slides__list">
                 <li class="slides__item slides__item--perforator">
                   <p class="slides__title">Перфораторы</p>
