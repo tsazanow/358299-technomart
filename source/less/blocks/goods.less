@@ -2,7 +2,6 @@
   display: flex;
   width: 100%;
   min-height: 89px;
-
   justify-content: space-between;
   align-items: center;
 
@@ -14,6 +13,7 @@
 .goods__title {
   min-width: 260px;
   margin: 0;
+  margin-left: 30px;
   padding: 0;
 
   color: #32425c;
@@ -22,6 +22,11 @@
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.goods__btn {
+  margin-left: auto;
+  margin-right: 24px;
 }
 
 .goods__list {
@@ -49,9 +54,26 @@
   padding: 0;
 
   border: 1px solid #e5e5e5;
+
+  &--ribbon {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 59px;
+
+      background-image: url("../img/new-flag.png");
+    }
+  }
 }
 
 .goods__image {
+  display: flex;
+  // align-items: center;
   width: 184px;
   height: 164px;
 
@@ -61,13 +83,9 @@
   text-align: center;
 }
 
-// .goods__image img {
-//   display: block;
-//   // width: auto;
-//   margin: auto;
-
-//   text-align: center;
-// }
+.goods__image img {
+  margin: auto;
+}
 
 .goods__item-title {
   width: 155px;
@@ -95,6 +113,7 @@
   text-transform: uppercase;
 }
 
-.goods__btn {
+.goods__item-btn {
   margin-top: auto;
+  margin-bottom: 21px;
 }
