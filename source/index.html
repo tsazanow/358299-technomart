@@ -201,34 +201,41 @@
             </li>
           </ul>
         </section>
+      </div>
 
-        <section class="services">
+      <section class="services">
+        <div class="container">
           <h2 class="services__title">Сервисы</h2>
           <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами!Мы стараемся изо всех сил, чтобы сделать ваши   покупки приятными.</p>
           <div class="services__wrapper">
-            <ul class="services__list">
-              <li class="services__item">Доставка</li>
-              <li class="services__item">Гарантия</li>
-              <li class="services__item">Кредит</li>
-            </ul>
-            <ul class="services__slides">
-              <li class="services__slides-item">
-                <p class="services__slides-title">Доставка</p>
-                <p class="services__slides-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,поднимая его на ваш этаж!</p>
+            <input type="radio" class="services__input" name="service" id="delivery" checked>
+            <input type="radio" class="services__input" name="service" id="guarantee">
+            <input type="radio" class="services__input" name="service" id="credit">
+            <div class="services__list">
+              <label for="delivery" class="services__item">Доставка</label>
+              <label for="guarantee" class="services__item">Гарантия</label>
+              <label for="credit" class="services__item">Кредит</label>
+            </div>
+            <ul class="services__cards">
+              <li class="services__cards-item services__cards-item--delivery">
+                <p class="services__cards-title">Доставка</p>
+                <p class="services__cards-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,поднимая его на ваш этаж!</p>
               </li>
-              <li class="services__slides-item">
-                <p class="services__slides-title">Гарантия</p>
-                <p class="services__slides-text">Если купленный у нас товар поломается или заискрит,а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+              <li class="services__cards-item services__cards-item--guarantee">
+                <p class="services__cards-title">Гарантия</p>
+                <p class="services__cards-text">Если купленный у нас товар поломается или заискрит,а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
               </li>
-              <li class="services__slides-item">
-                <p class="services__slides-title">Кредит</p>
-                <p class="services__slides-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+              <li class="services__cards-item services__cards-item--credit">
+                <p class="services__cards-title">Кредит</p>
+                <p class="services__cards-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
                 <a class="btn btn__credit" href="#">Отправить заявку</a>
               </li>
             </ul>
           </div>
-        </section>
+        </div>
+      </section>
 
+      <div class="container">
         <section class="about">
           <h2 class="visually-hidden">О компании</h2>
           <div class="about__wrapper">
