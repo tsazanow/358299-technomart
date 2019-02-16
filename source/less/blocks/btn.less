@@ -1,7 +1,7 @@
 .btn {
   display: block;
   box-sizing: border-box;
-  width: 195px;
+  min-width: 195px;
   margin: 0 auto;
   padding: 14px 15px;
 
@@ -22,7 +22,7 @@
   // }
 
   &--popular {
-    width: 253px;
+    min-width: 253px;
     min-height: 38px;
 
     // padding: 14px 55px;
@@ -30,7 +30,7 @@
 
   &--buy {
     position: relative;
-    width: 121px;
+    min-width: 121px;
     min-height: 38px;
 
     font-family: @ptsans-bold;
@@ -53,14 +53,14 @@
 	    margin-top: -23px;
     }
   }
-}
 
-// .btn__credit {
-//   background-color: #f2f2f2;
-// }
+  &--about {
+    width: 220px;
+  }
 
-.btn__about {
-  background-color: #f2f2f2;
+  &--contacts {
+    width: 300px;
+  }
 }
 
 .btn__social {
