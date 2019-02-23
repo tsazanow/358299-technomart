@@ -10,7 +10,8 @@
 
 .info__wrapper {
   display: flex;
-  width: 100%;
+  width: 940px;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
 }
@@ -32,24 +33,43 @@
 }
 
 .info__phone {
+  position: relative;
+  box-sizing: border-box;
   width: 270px;
   height: 45px;
+  margin: 0;
+  margin-top: 44px;
+  padding: 0;
+  padding-top: 13px;
+  padding-bottom: 11px;
 
   border: 3px solid #ffffff;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 19px;
+    height: 19px;
+    top: 30%;
+    left: 10%;
+
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .info__phone-number {
   display: block;
-  min-width: 151px;
+  width: 151px;
   margin: 0 auto;
   padding: 0;
+  padding-left: 40px;
 
   font-size: 21px;
   line-height: 18px;
   letter-spacing: 0.42px;
   color: #e9292a;
   text-align: center;
-  vertical-align: middle;
 }
 
 .info__address {
@@ -62,7 +82,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  flex-basis: 281px;
+  flex-basis: 300px;
   min-height: 45px;
 }
 
@@ -80,6 +100,41 @@
   background-color: #ffffff;
   border: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #ee3643;
+  }
+
+  &:active {
+    opacity: 0.3;
+    color: #000000;
+  }
+}
+
+.info__signin {
+  position: relative;
+  padding-left: 14px;
+}
+
+.info__login-icon {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 17px;
+  top: 30%;
+  left: 10px;
+
+  fill: #c5c5c5;
+}
+
+.info__signin:hover .info__login-icon,
+.info__signin:focus .info__login-icon {
+  fill: #000000;
+}
+
+.info__signin:active .info__login-icon {
+  fill: #c5c5c5;
 }
 
 .info__signup {
