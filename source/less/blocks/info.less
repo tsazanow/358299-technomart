@@ -4,8 +4,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-
-  background-color: #f3f7f9;
 }
 
 .info__wrapper {
@@ -78,8 +76,9 @@
   color: #32425c;
 }
 
-.info__user {
-  display: flex;
+.info__login {
+  display: none;
+  // display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-basis: 300px;
@@ -144,4 +143,37 @@
   padding-top: 14px;
 
   text-align: center;
+}
+
+.info__user-block {
+  width: 300px;
+  min-height: 80px;
+}
+
+.info__user {
+  // display: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-basis: 300px;
+  min-height: 45px;
+}
+
+.info__user-name {
+  width: 260px;
+  padding-left: 47px;
+}
+
+.info__user-link {
+  color: #000000;
+  font-family: @cuprum;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.info__logout {
+  flex-basis: 40px;
+
+  font-size: 0;
+  border: none;
 }
