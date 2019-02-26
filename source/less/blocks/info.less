@@ -157,23 +157,109 @@
   align-items: center;
   flex-basis: 300px;
   min-height: 45px;
+
+  background-color: #ffffff;
 }
 
 .info__user-name {
   width: 260px;
+  margin: 0;
+  padding: 0;
   padding-left: 47px;
 }
 
 .info__user-link {
-  color: #000000;
+  position: relative;
+
   font-family: @cuprum;
   font-size: 21px;
   font-weight: 400;
+  color: #000000;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.info__user-icon {
+  position: absolute;
+  content: "";
+  top: 20%; 
+  left: -20%;
+  width: 20px;
+  height: 18px;
+
+  fill: #c5c5c5;
+}
+
+.info__user-link:hover .info__user-icon,
+.info__user-link:focus .info__user-icon {
+  fill: #32425c;
 }
 
 .info__logout {
+  position: relative;
   flex-basis: 40px;
 
   font-size: 0;
   border: none;
+
+  fill: #c5c5c5;
+
+  &:hover,
+  &:focus {
+    fill: #32425c;
+  }
+
+  &:active {
+    color: #32425c;
+    opacity: 0.3;
+  }
+}
+
+.info__logout-icon {
+  position: absolute;
+  content: "";
+  top: 5px; 
+  right: 10px;
+  width: 21px;
+  height: 17px;
+}
+
+.info__orders,
+.info__account {
+  padding-left: 17px;
+  padding-right: 10px;
+
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: 400;
+  color: #32425c;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: #ee3643;
+  }
+
+  &:active {
+    color: #32425c;
+    opacity: 0.3;
+  }
+}
+
+.info__account {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 4px;
+    top: 40%;
+    left: 0;
+
+    background-color: #32425c;
+    border-radius: 50%;
+  }
 }
