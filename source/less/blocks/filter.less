@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
 
   width: 220px;
-  min-height: 750px;
-
+  // min-height: 750px;
 }
 
 .filter__title {
@@ -13,6 +13,7 @@
   width: 220px;
   min-height: 38px;
   margin: 0;
+  margin-bottom: 20px;
   padding: 10px 0;
   padding-left: 18px;
 
@@ -25,3 +26,25 @@
 
   background-color: #f7f3ec;
 }
+
+.filter__wrapper {
+  width: 100%;
+  min-height: 190px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.filter__legend {
+  color: #000000;
+  font-family: @ptsans;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+
