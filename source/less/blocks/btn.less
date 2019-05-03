@@ -2,8 +2,9 @@
   display: block;
   box-sizing: border-box;
   min-width: 195px;
+  min-height: 38px;
   margin: 0 auto;
-  padding: 14px 15px;
+  padding: 0 15px;
 
   font-family: @cuprum;
   font-size: 14px;
@@ -17,9 +18,9 @@
   border: none;
   border-radius: 2px;
 
-  // &--catalog {
-  //   max-width: 195px;
-  // }
+  &--catalog {
+    padding: 10px 15px;
+  }
 
   &--popular {
     min-width: 253px;
@@ -56,10 +57,12 @@
 
   &--about {
     width: 220px;
+    padding: 10px 15px;
   }
 
   &--contacts {
     width: 300px;
+    padding: 10px 15px;
   }
 
   &--modal {
@@ -76,6 +79,28 @@
   }
 }
 
-.btn__social {
-  background-color: #f2f2f2;
+.btn__filter {
+  min-width: 140px;
+
+  color: #000000;
+  font-family: @ptsans;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  background-color: #ffffff;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #bdc6ca;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    border: 1px solid #ee3643;
+    background-color: #ffffff;
+  }
 }
+
