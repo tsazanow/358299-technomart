@@ -1,19 +1,24 @@
-.footer {
+.footer-nav {
+  display: flex;
+  width: 100%;
+  min-height: 193px;
+
   background-color: #32425c;
 }
 
-.footer-nav {
-  display: flex;
-  width: 940px;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  margin-bottom: 50px;
+.footer-nav__wrapper {
+   display: flex;
+   //  width: 100%;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   width: 940px;
+   margin: 0 auto;
 }
 
-.footer-nav__wrapper {
+.footer-nav__contacts {
   flex-basis: 380px;
+  min-height: 193px;
 }
 
 .footer-nav__logo {
@@ -35,8 +40,10 @@
 .footer-nav__list {
   display: flex;
   justify-content: flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
   flex-basis: 550px;
+  min-height: 100px;
 
   margin: 0;
   padding: 0;

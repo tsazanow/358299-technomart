@@ -181,36 +181,52 @@
             <button class="goods__btn btn btn--popular" type="button">все популярные товары</button>
           </div>
           <ul class="goods__list">
-            <li class="goods__item">
-              <p class="goods__image">
-                <img src="img/bfg-9000.png" width="184" height="164" alt="BOSCH BFG   9000">
-              </p>
-              <p class="goods__item-title">Перфоратор BOSCH BFG 9000</p>
-              <p class="goods__item-sale">32500 Р.</p>
-              <button class="goods__item-btn btn btn--buy" type="button">25500 Р.</button>
-            </li>
-            <li class="goods__item">
-              <p class="goods__image">
-                <img src="img/bfg-3000.png" width="127" height="112" alt="BOSCH BFG   3000">
-              </p>
-              <p class="goods__item-title">Перфоратор BOSCH BFG 3000</p>
-              <p class="goods__item-sale">22500 Р.</p>
-              <button class="goods__item-btn btn btn--buy" type="button">15500 Р.</button>
-            </li>
-            <li class="goods__item">
-              <p class="goods__image">
-                <img src="img/bfg-6000.png" width="144" height="128" alt="BOSCH BFG   6000">
-              </p>
-              <p class="goods__item-title">Перфоратор BOSCH BFG 6000</p>
-              <p class="goods__item-sale">30500 Р.</p>
-              <button class="goods__item-btn btn btn--buy" type="button">25500 Р.</button>
-            </li>
+             <li class="goods__item">
+               <p class="goods__image">
+                 <img src="img/bfg-9000.png" width="184" height="164" alt="BOSCH BFG   9000">
+               </p>
+               <p class="goods__buttons">
+                 <a href="#" class="goods__button-buy">КУПИТЬ</a>
+                 <button class="goods__button-favorites">В закладки</button>
+               </p>
+               <p class="goods__item-title">Перфоратор BOSCH BFG 9000</p>
+               <p class="goods__item-sale">32500 Р.</p>
+               <p class="goods__item-price">25500 Р.</p>
+             </li>
+             <li class="goods__item">
+               <p class="goods__image">
+                 <img src="img/bfg-3000.png" width="127" height="112" alt="BOSCH BFG   3000">
+               </p>
+               <p class="goods__buttons">
+                 <a href="#" class="goods__button-buy">КУПИТЬ</a>
+                 <button class="goods__button-favorites">В закладки</button>
+               </p>
+               <p class="goods__item-title">Перфоратор BOSCH BFG 3000</p>
+               <p class="goods__item-sale">22500 Р.</p>
+               <p class="goods__item-price">15500 Р.</p>
+             </li>
+             <li class="goods__item">
+               <p class="goods__image">
+                 <img src="img/bfg-6000.png" width="144" height="128" alt="BOSCH BFG   6000">
+               </p>
+               <p class="goods__buttons">
+                 <a href="#" class="goods__button-buy">КУПИТЬ</a>
+                 <button class="goods__button-favorites">В закладки</button>
+               </p>
+               <p class="goods__item-title">Перфоратор BOSCH BFG 6000</p>
+               <p class="goods__item-sale">30500 Р.</p>
+               <p class="goods__item-price">25500 Р.</p>
+             </li>
             <li class="goods__item goods__item--ribbon">
               <p class="goods__image">
                 <img src="img/bfg-2000.png" width="127" height="112" alt="BOSCH BFG   2000">
               </p>
+              <p class="goods__buttons">
+                <a href="#" class="goods__button-buy">КУПИТЬ</a>
+                <button class="goods__button-favorites">В закладки</button>
+              </p>
               <p class="goods__item-title">Перфоратор BOSCH BFG 2000</p>
-              <button class="goods__item-btn btn btn--buy" type="button">12500 Р.</button>
+              <p class="goods__item-price">12500 Р.</p>
             </li>
           </ul>
         </section>
@@ -252,7 +268,7 @@
       <section class="services">
         <div class="container">
           <h2 class="services__title">Сервисы</h2>
-          <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами!Мы стараемся изо
+          <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо
             всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="services__wrapper">
             <input type="radio" class="services__input" name="service" id="delivery" checked>
@@ -313,9 +329,9 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <nav class="footer-nav">
-          <div class="footer-nav__wrapper">
+      <nav class="footer-nav">
+        <div class="footer-nav__wrapper">
+          <div class="footer-nav__contacts">
             <p class="footer-nav__logo logo logo--footer">Техномарт</p>
             <p class="footer-nav__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <p class="footer-nav__phone">+7 (812) 555-05-55</p>
@@ -349,35 +365,37 @@
               <a class="footer-nav__link footer-nav__link--marked" href="#">Спецпредложения</a>
             </li>
           </ul>
-        </nav>
+        </div>
+      </nav>
 
-        <section class="feedback">
+      <section class="feedback">
+        <div class="feedback__wrapper">
           <div class="feedback__copyright">
             <p class="feedback__copyright-text">© 2010–2017 Компания «Техномарт» Все права защищены</p>
           </div>
           <div class="feedback__social social">
             <ul class="social__list">
-              <li class="social__item social__item--vk">
-                <a href="https://vk.com">Вконтакте</a>
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="https://vk.com" title="Вконтакте"></a>
               </li>
-              <li class="social__item social__item--fb">
-                <a href="https://fb.com">Фейсбук</a>
+              <li class="social__item">
+                <a class="social__link social__link--fb" href="https://fb.com" title="Фейсбук"></a>
               </li>
-              <li class="social__item social__item--inst">
-                <a href="https://instagram.com">Инстаграм</a>
+              <li class="social__item">
+                <a class="social__link social__link--inst" href="https://instagram.com" title="Инстаграм"></a>
               </li>
             </ul>
           </div>
           <div class="feedback__mail">
             <span class="feedback__mail-title">Обратная связь:</span>
-            <span class="feedback__mail-address">mail@htmlacademy.ru</span>
+            <a class="feedback__mail-address" href="#" title="Почта">mail@htmlacademy.ru</a>
           </div>
           <div class="feedback__developer">
             <span class="feedback__developer-title">Разработано —</span>
-            <span class="feedback__developer-site">htmlacademy.ru</span>
+            <a class="feedback__developer-site" href="https://htmlacademy.ru" title="HTML Академия">htmlacademy.ru</a>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </footer>
   </body>
 
