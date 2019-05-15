@@ -1,10 +1,10 @@
 .modal {
-  position: relative;
   display: none;
   // display: flex;
   flex-direction: column;
   box-sizing: border-box;
   position: fixed;
+  top: 25%;
   left: 50%;
   bottom: 172px;
   width: 620px;
@@ -19,14 +19,21 @@
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
   z-index: 500;
+
+  &--cart {
+    height: 285px;
+  }
 }
 
 .modal__wrapper {
   width: 460px;
-  min-height: 250px;
+  height: 250px;
   margin: 0 auto;
   margin-top: 48px;
 
+  &--cart {
+    height: 163px;
+  }
 }
 
 .modal__form {
@@ -80,7 +87,7 @@
 
 .modal__btn-send {
   margin: 0 auto;
-  margin-top: 37px;
+  // margin-top: 37px;
 }
 
 .modal__btn-close {
@@ -99,10 +106,44 @@
 }
 
 .modal__btn-wrapper {
- width: 620px;
- height: 112px;
- margin-top: auto;
- margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 112px;
+  margin: 0 auto;
+  margin-top: auto;
+  padding: 0 80px;
 
- background-color: #f1f1f1;
+  background-color: #f1f1f1;
+}
+
+.modal__btn-continue {
+  margin-left: 20px;
+}
+
+.modal__success {
+  position: relative;
+  margin: 0;
+  margin-top: 21px;
+  padding: 0;
+  padding-left: 99px;
+
+  color: #000000;
+  font-family: @cuprum;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 18px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 66px;
+    height: 66px;
+    top: -20px;
+    left: 0;
+
+    background-image: url("../img/form-1.svg");
+  }
 }
