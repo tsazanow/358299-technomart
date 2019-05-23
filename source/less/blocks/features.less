@@ -1,5 +1,5 @@
 .features {
-  margin-top: 60px;
+  margin-top: 54px;
 }
 
 .features__list {
@@ -11,7 +11,7 @@
   align-items: center;
 
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
   padding: 0;
 
   list-style-type: none;
@@ -22,44 +22,54 @@
   height: 123px;
 
   &--materials {
+    margin-top: 4px;
+
     background-color: #f6b22d;
     background-image: url("../img/icon-materials.svg");
-    background-position: right center;
+    background-position: 83% center;
     background-repeat: no-repeat;
   }
 
   &--tools {
+    margin-top: 4px;
+
     background-color: #4aafde;
     background-image: url("../img/icon-tools.svg");
-    background-position: right center;
+    background-position: 88% center;
     background-repeat: no-repeat;
   }
 
   &--equipment {
+    margin-top: 4px;
+
     background-color: #cc79d1;
     background-image: url("../img/icon-equipment.svg");
-    background-position: right center;
+    background-position: 83% center;
     background-repeat: no-repeat;
   }
 
   &--slides {
     height: 266px;
     margin: 0;
-    margin-top: auto;
+    margin-top: 21px;
   }
 
   &--discounts {
+    // box-sizing: border-box;
+
     background-color: #85d179;
     background-image: url("../img/icon-discounts.svg");
-    background-position: right center;
+    background-position: 83% center;
     background-repeat: no-repeat;
   }
 
   &--delivery {
+    // box-sizing: border-box;
     margin-top: 20px;
+
     background-color: #f6b22d;
     background-image: url("../img/icon-delivery.svg");
-    background-position: right center;
+    background-position: 83% center;
     background-repeat: no-repeat;
   }
 
@@ -87,6 +97,8 @@
 
 .features__title {
   margin: 0;
+  margin-top: 22px;
+  margin-left: 22px;
   padding: 0;
 
   font-size: 24px;
@@ -101,6 +113,8 @@
   width: 135px;
   height: 38px;
   margin: 0;
+  margin-top: 12px;
+  margin-left: 24px;
   padding: 12px 14px;
 
   font-size: 14px;
@@ -120,3 +134,17 @@
 	background-color: rgba(0, 0, 0, 0.3);
   }
 }
+
+.features__item--discounts .features__title,
+.features__item--delivery .features__title {
+  margin-top: 0;
+  margin-left: 22px;
+  padding-top: 20px;
+}
+
+.features__item--discounts .features__text,
+.features__item--delivery .features__text {
+  margin-top: 12px;
+  margin-left: 24px;
+}
+

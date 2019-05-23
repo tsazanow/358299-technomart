@@ -23,11 +23,15 @@
 
 .footer-nav__logo {
   margin: 0;
+  margin-bottom: 33px;
 }
 
 .footer-nav__address,
 .footer-nav__phone {
   width: 322px;
+  margin: 0;
+  margin-left: 4px;
+  padding: 0;
 
   color: #f1f5f7;
   font-family: @cuprum;
@@ -44,8 +48,8 @@
   flex-wrap: wrap;
   flex-basis: 550px;
   min-height: 100px;
-
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
 
   list-style: none;
@@ -56,10 +60,21 @@
   margin-right: 0;
   margin-left: 0;
 
+  text-align: center;
+}
+
+.footer-nav__item:first-child {
   text-align: left;
 }
 
-.footer-nav__item:nth-child(5n) {
+.footer-nav__item:nth-child(2),
+.footer-nav__item:nth-child(3),
+.footer-nav__item:nth-child(4) {
+  text-align: center;
+}
+
+.footer-nav__item:nth-child(5) {
+  text-align: right;
   margin-right: 0;
 }
 
@@ -69,14 +84,7 @@
 .footer-nav__item:nth-child(9) {
   text-align: left;
   margin-left: auto;
-}
-
-.footer-nav__item:nth-child(5) {
-  text-align: right;
-}
-
-.footer-nav__item:last-child {
-  margin-left: auto;
+  margin-top: 16px;
 }
 
 .footer-nav__link {
