@@ -93,12 +93,11 @@
   flex-basis: 300px;
   min-height: 45px;
   flex-wrap: wrap;
-
-  background-color: #ffffff;
+  margin-top: 39px;
 
   &--login {
-  //  display: none;
-   display: flex;
+   display: none;
+  //  display: flex;
    justify-content: flex-end;
    align-items: center;
    flex-basis: 300px;
@@ -109,8 +108,8 @@
   }
 
   &--account {
-    // display: flex;
-    display: none;
+    display: flex;
+    // display: none;
     min-height: 80px;
   }
 }
@@ -181,15 +180,17 @@
   justify-content: flex-start;
   align-items: center;
   flex-basis: 300px;
-  min-height: 45px;
+  height: 45px;
+  margin-top: 10px;
 
   background-color: #ffffff;
 }
 
 .info__user-name {
+  box-sizing: border-box;
   width: 260px;
   margin: 0;
-  padding: 0;
+  padding: 12px 0;
   padding-left: 47px;
 }
 
@@ -198,6 +199,7 @@
 
   font-family: @cuprum;
   font-size: 21px;
+  line-height: 18px;
   font-weight: 400;
   color: #000000;
 
@@ -209,8 +211,8 @@
 .info__user-icon {
   position: absolute;
   content: "";
-  top: 20%;
-  left: -20%;
+  top: 12%;
+  left: -17%;
   width: 20px;
   height: 18px;
 
@@ -245,7 +247,7 @@
 .info__logout-icon {
   position: absolute;
   content: "";
-  top: 5px;
+  top: 0;
   right: 10px;
   width: 21px;
   height: 17px;
@@ -253,8 +255,8 @@
 
 .info__orders,
 .info__account {
-  padding-left: 17px;
-  padding-right: 10px;
+  padding-left: 18px;
+  padding-right: 15px;
 
   font-family: @cuprum;
   font-size: 16px;

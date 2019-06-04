@@ -21,9 +21,9 @@
 
 .sorting__list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  width: 480px;
+  width: 100%;
   margin: 0;
   padding: 0;
 
@@ -31,7 +31,8 @@
 }
 
 .sorting__item {
-  min-width: 140px;
+  // min-width: 140px;
+  width: auto;
 
   color: #000000;
   font-family: @ptsans;
@@ -46,6 +47,21 @@
     height: 20px;
     align-items: center;
   }
+
+  &:nth-child(2) {
+    margin-right: 50px;
+  }
+
+  &:nth-child(3) {
+    margin-right: 57px;
+  }
+}
+
+.sorting__title {
+  width: 140px;
+  margin: 0;
+  margin-right: 60px;
+  padding: 0;
 }
 
 .sorting__toggle {
@@ -131,12 +147,6 @@
   }
 }
 
-.sorting__title {
-  width: 140px;
-  margin: 0;
-  padding: 0;
-}
-
 .sorting__goods {
   display: flex;
   flex-direction: row;
@@ -146,7 +156,7 @@
   width: 700px;
   min-height: 1040px;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 6px;
   margin-bottom: 20px;
   padding: 0;
 
