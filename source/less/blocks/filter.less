@@ -41,15 +41,20 @@
 }
 
 .filter__brands {
-  height: 248px;
-  overflow: scroll;
+  min-height: 248px;
+  overflow-x: hidden;
 }
 
 .filter__power {
+  min-height: 125px;
+  margin-bottom: 19px;
+
   border: none;
 }
 
 .filter__legend {
+  margin-bottom: 3px;
+
   color: #000000;
   font-family: @ptsans;
   font-size: 17px;
@@ -70,30 +75,24 @@
   width: 100%;
   min-height: 200px;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 15px;
   margin-top: 3px;
   padding: 0;
 
   list-style: none;
 
   &--power {
+    justify-content: flex-start;
     min-height: 100px;
     margin-bottom: 27px;
-    margin-top: 20px;
+    margin-top: 0;
   }
 }
 
 .filter__option {
   width: 100%;
-  margin: 10px auto;
+  margin: 7px auto;
   padding-left: 35px;
-
-  color: #000000;
-  font-family: @ptsans;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: uppercase;
 }
 
 .filter__checkbox {
@@ -102,6 +101,16 @@
 
 .filter__radio {
   display: none;
+}
+
+.filter__checkbox-label,
+.filter__radio-label {
+  color: #000000;
+  font-family: @ptsans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .filter__checkbox-label {
@@ -141,6 +150,8 @@
 
 .filter__radio-label {
   position: relative;
+
+  font-size: 14px;
   cursor: pointer;
 
   &::before {

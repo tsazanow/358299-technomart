@@ -85,7 +85,7 @@
   display: inline-block;
   margin: 0;
   padding: 0;
-  padding-bottom: 2px;
+  // padding-bottom: 2px;
 
   font-family: @ptsans;
   font-size: 13px;
@@ -94,12 +94,14 @@
   color: #000000;
   opacity: 0.3;
 
-  border-bottom: 1px dotted #ee3643;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #ee3643;
 
   &:hover,
   &:focus {
     opacity: 1;
-    border-bottom: 1px solid #ee3643;
+    text-decoration-style: solid;
   }
 
   &:active,
@@ -154,10 +156,10 @@
   align-items: center;
   flex-wrap: wrap;
   width: 700px;
-  min-height: 1040px;
+  min-height: 1020px;
   margin: 0;
   margin-top: 6px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   padding: 0;
 
   list-style: none;
