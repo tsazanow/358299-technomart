@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная: Техномарт</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link href="fonts/cuprum.woff2" rel="preload" as="font">
     <link href="fonts/cuprumbold.woff2" rel="preload" as="font">
     <link href="fonts/cuprumbolditalic.woff2" rel="preload" as="font">
@@ -19,17 +19,21 @@
       <section class="header__top">
         <div class="container">
           <div class="header__wrapper">
-            <div class="header__logo logo logo--header">Техномарт</div>
+            <div class="header__logo logo logo--header">
+              <a href="index.min.html" class="logo__link">Техномарт</a>
+            </div>
             <div class="header__search">
               <!-- <label class="test" for="search">Поиск:</label> -->
               <input class="header__input" type="text" name="search-field" id="search" placeholder="Поиск:">
               <svg class="header__search-icon" width="17" height="17" viewBox="0 0 17 17">
-                <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
+                <path
+                      d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
               </svg>
             </div>
             <div class="header__favorites">
               <svg class="header__favorites-icon" width="14" height="16" viewBox="0 0 14 16">
-                <path fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z" />
+                <path fill="#ffffff"
+                      d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z" />
               </svg>
               <a href="#" class="header__favorites-link">Закладки: <span>0</span></a>
             </div>
@@ -49,7 +53,8 @@
       </section>
       <section class="info">
         <div class="info__wrapper">
-          <p class="info__title">Интернет-магазин строительных материалов&nbsp;&nbsp;&nbsp; и инструментов для ремонта</p>
+          <p class="info__title">Интернет-магазин строительных материалов&nbsp;&nbsp;&nbsp; и инструментов для ремонта
+          </p>
           <div class="info__contacts">
             <p class="info__phone">
               <a href="tel:+7(812)555-05-55" class="info__phone-number">+7 (812) 555-05-55</a>
@@ -58,9 +63,11 @@
           </div>
           <div class="info__user info__user--login">
             <button type="button" class="info__signin">
-              <svg class="info__login-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+              <svg class="info__login-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17"
+                   viewBox="0 0 20 17">
                 <path d="M14.875 8.5L6 0v6H0v5h6v6z" />
-                <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
+                <path
+                      d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
               </svg>Войти
             </button>
             <a href="#" class="info__signup">Регистрация</a>
@@ -70,7 +77,8 @@
               <p class="info__user-name">
                 <a href="#" class="info__user-link">Равшан Джамшутович
                   <svg class="info__user-icon" width="20" height="18" viewBox="0 0 20 18">
-                    <path fill="" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z" />
+                    <path fill=""
+                          d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z" />
                   </svg>
                 </a>
               </p>
@@ -78,7 +86,8 @@
                 <svg class="info__logout-icon" width="21" height="17" viewBox="0 0 21 17">
                   <g fill="">
                     <path fill="" d="M21 8.5L12.125 0v6h-6v5h6v6z" />
-                    <path fill="" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z" />
+                    <path fill=""
+                          d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z" />
                   </g>
                 </svg>
               </a>
@@ -100,7 +109,7 @@
                 <a href="#" class="nav__link">Компания</a>
               </li>
               <li class="nav__item">
-                <a href="catalog.html" class="nav__link">Каталог</a>
+                <a href="catalog.min.html" class="nav__link">Каталог</a>
               </li>
               <li class="nav__item">
                 <a href="#" class="nav__link">Новости</a>
@@ -292,7 +301,8 @@
             <ul class="services__cards">
               <li class="services__cards-item services__cards-item--delivery">
                 <p class="services__cards-title">Доставка</p>
-                <p class="services__cards-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                <p class="services__cards-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+                  бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
               </li>
               <li class="services__cards-item services__cards-item--guarantee">
                 <p class="services__cards-title">Гарантия</p>
@@ -317,7 +327,8 @@
             <h3 class="about__title">Компания «Техномарт»</h3>
             <p class="about__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
               строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
-            <p class="about__text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+            <p class="about__text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со
+              многими транспортными компаниями:</p>
             <ul class="about__list">
               <li class="about__item">Деловые линии</li>
               <li class="about__item">Автотрейдинг</li>
@@ -328,7 +339,8 @@
           <div class="about__contacts">
             <h3 class="about__title">Контакты</h3>
             <p class="about__text">Вы можете забрать товар сами, заехав в наш офис:</p>
-            <a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.323307%2C59.938643&mode=search&sll=30.323055%2C59.938631&sspn=0.018926%2C0.005233&text=%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%2019&z=19" class="about__map">
+            <a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.323307%2C59.938643&mode=search&sll=30.323055%2C59.938631&sspn=0.018926%2C0.005233&text=%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%2019&z=19"
+               class="about__map">
               <img src="img/mini-map.png" width="300" height="158" alt="Карта">
             </a>
             <a href="#" class="btn btn--contacts about__contacts-btn">Заблудились? Напишите нам!</a>
@@ -340,7 +352,9 @@
       <nav class="footer-nav">
         <div class="footer-nav__wrapper">
           <div class="footer-nav__contacts">
-            <p class="footer-nav__logo logo logo--footer">Техномарт</p>
+            <p class="footer-nav__logo logo logo--footer">
+              <a href="index.min.html" class="logo__link">Техномарт</a>
+            </p>
             <p class="footer-nav__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <p class="footer-nav__phone">+7 (812) 555-05-55</p>
           </div>
@@ -352,7 +366,7 @@
               <a class="footer-nav__link" href="#">Новости</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="catalog.html">Каталог</a>
+              <a class="footer-nav__link" href="catalog.min.html">Каталог</a>
             </li>
             <li class="footer-nav__item">
               <a class="footer-nav__link" href="#">Доставка</a>
