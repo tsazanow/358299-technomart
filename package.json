@@ -23,7 +23,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^1.x",
     "autoprefixer": "^9.0.1",
-    "browser-sync": "2.26.3",
+    "browser-sync": "2.27.10",
     "del": "^3.0.0",
     "editorconfig": "^0.15.2",
     "editorconfig-cli": "^0.2.1",
